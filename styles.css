@@ -1,0 +1,148 @@
+:root {
+  --primary-color: #ee6983;
+  --secondary-color: #ffc4c4;
+  --primary-dark-color: #850e35;
+  --tertiary-color: #fff5e4;
+  --text-dark-color: #333;
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 2000px) {
+  html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: sans-serif;
+  }
+
+  .header {
+    background-image: radial-gradient(#fff5e471, #ee698479),
+      url(./img/434763578_415569011193519_56531931252055413_n.jpg);
+    background-attachment: fixed;
+
+    height: 100vh;
+    background-size: 100% 100%;
+    position: relative;
+  }
+
+  .header__title {
+    color: var(--tertiary-color);
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 10rem;
+    text-transform: capitalize;
+  }
+
+  .box {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #850e35;
+    font-size: 3rem;
+    margin: 3rem;
+    border-radius: 0.7rem;
+  }
+
+  .container {
+    background-image: linear-gradient(
+      to right bottom,
+      var(--primary-color),
+      var(--secondary-color)
+    );
+    background-attachment: fixed;
+  }
+
+  .header__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header__logo img {
+    width: 12rem;
+    height: 7rem;
+  }
+
+  .header__text {
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+  }
+
+  .header__content-box {
+    width: 100%;
+    padding: 0 3rem;
+    height: 95vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  /* @media only screen and (min-width: 800px) {
+  html {
+    display: none;
+  }
+} */
+
+  .quote-box {
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .quote-box__img {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+  }
+
+  .quote-box__title {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--tertiary-color);
+  }
+
+  .box__img {
+    width: 100%;
+    overflow: hidden;
+    height: auto;
+    border-radius: 0.7rem 0.7rem 0 0;
+  }
+
+  .box__title {
+    font-size: 2rem;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .box__text {
+    font-size: 1.4rem;
+    padding: 2rem;
+    padding-top: 0;
+    color: var(--text-dark-color);
+  }
+
+  .dots-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .dots-container img {
+    width: 3rem;
+    height: 3rem;
+  }
+}
